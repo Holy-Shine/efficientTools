@@ -12,6 +12,8 @@ inc = 1  # 递增值
     @fstr: 第一个文件的名字
     @path：重命名路径
     @inc： 增长量
+返回值：
+    最后一个文件的Number号
 '''
 def renameDir(path,fstr,inc=1):
     try:
@@ -48,6 +50,7 @@ def renameDir(path,fstr,inc=1):
             
         if flag:
             print('选择目录存在子目录。共略过%d个子目录'%wrong)
+    return int(curNumber)
 if __name__=='__main__':
     if len(sys.argv)==3:
         renameDir(sys.argv[1],sys.argv[2])

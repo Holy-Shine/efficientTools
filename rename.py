@@ -53,7 +53,7 @@ def renameDir(path,fstr,inc=1):
     return int(curNumber)
 if __name__=='__main__':
     if len(sys.argv)==3:
-        renameDir(sys.argv[1],sys.argv[2])
+        print(renameDir(sys.argv[1],sys.argv[2]))
     else:
-        renameDir(sys.argv[1],sys.argv[2],int(sys.argv[3]))
+        print(renameDir(sys.argv[1],sys.argv[2],int(sys.argv[3])))
     

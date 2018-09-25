@@ -32,7 +32,9 @@ def renameDir(path,fstr,inc=1):
         if not os.path.exists(path):
             print('选择路径不存在！')
             return 
-        for file in os.listdir(path):
+        files = os.listdir(path)
+        files.sort(key=lambda x:int(x[:-4]))
+        for file in files:
             fpath = path+os.path.sep+file
             if os.path.isdir(fpath):
                 wrong+=1

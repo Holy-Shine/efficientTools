@@ -3,6 +3,7 @@
 递增值：n
 '''
 import re,os,sys
+reg2 = '(\[.+\])?[\-\_]?([0-9]+)(\..*)'
 reg = '\[([^\[\]]+)\][\-\_]?([0-9]+)(\..*)' #正则
 inc = 1  # 递增值
 
@@ -17,7 +18,7 @@ inc = 1  # 递增值
 '''
 def renameDir(path,fstr,inc=1):
     try:
-        mchObj = re.match(reg,fstr)
+        mchObj = re.match(reg2,fstr)
     except:
         print('重命名格式不规范!')
         return

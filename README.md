@@ -11,3 +11,15 @@
      举个例子：  
      `[海贼王]-0001.png`，则程序会把第一个文件重命名成`海贼王0001.png`，
   3. 增量可选，默认为1，后续文件根据前一个文件数字自增。
+
+
+## 图片压缩工具
+
+```bash
+python compress_img.py ${your_img_dir} --ratio ${压缩率} --out ${输出路径}
+```
+
+**help**:
+```bash
+python compress_img.py --help
+```

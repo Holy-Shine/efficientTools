@@ -1,6 +1,7 @@
 from PIL import Image
 import os
-
+import PIL.Image
+PIL.Image.MAX_IMAGE_PIXELS = 933120000
 
 
 
